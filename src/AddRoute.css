@@ -1,0 +1,20 @@
+.add-route {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 75%;
+  width: 50%;
+}
+
+select {
+  height: 8%;
+  width: 40%;
+  font-size: 35px;
+}
+
+input {
+  height: 8%;
+  width: 40%;
+  font-size: 35px;
+}
