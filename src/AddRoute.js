@@ -50,7 +50,7 @@ class AddRoute extends Component {
         <select name='style' value={this.state.style} onChange={this.handleChange}>
           <option>Style?</option>
           <option value='boulder problem'>Boulder Problem</option>
-          <option value='top rope route'>Top Rop Route</option>
+          <option value='top rope route'>Top Rope Route</option>
           <option value='lead route'>Lead Route</option>
         </select>
         <input 

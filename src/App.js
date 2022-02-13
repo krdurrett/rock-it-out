@@ -9,32 +9,7 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      climbs: [
-        {id: 1, 
-        style: 'boulder',
-        location: 'movement',
-        name: 'kazoo',
-        grade: 'v1',
-        success: 'flashed',
-        attempt: 1,
-        date: '01/20/2022'},
-        {id: 1, 
-        style: 'boulder',
-        location: 'movement',
-        name: 'kazoo',
-        grade: 'v1',
-        success: 'flashed',
-        attempt: 1,
-        date: '01/20/2022'},
-        {id: 1, 
-        style: 'boulder',
-        location: 'movement',
-        name: 'kazoo',
-        grade: 'v1',
-        success: 'flashed',
-        attempt: 1,
-        date: '01/20/2022'}
-      ]
+      climbs: []
     }
   }
 
@@ -47,9 +22,9 @@ class App extends Component {
     return (
       <main className='app'>
         <nav className='nav-bar'>
-          <NavLink to='/'>Rock It Out</NavLink>
-          <NavLink to="/addroute">Add a Route</NavLink>
-          <NavLink to="/viewroutes">View Your Routes</NavLink>
+          <NavLink className='home-button' to='/'>💪ROCK IT OUT</NavLink>
+          <NavLink className='nav-buttons' to="/addroute">Add a Route</NavLink>
+          <NavLink className='nav-buttons' to="/viewroutes">View Your Routes</NavLink>
         </nav>
         <div className='content'>
           <Route exact path="/" render={() => <Home />} />
